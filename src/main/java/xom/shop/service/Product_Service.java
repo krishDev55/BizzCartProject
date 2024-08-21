@@ -3,14 +3,15 @@ package xom.shop.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import xom.shop.dao.Product_Repository;
+import xom.shop.dao.ProductRepo;
+
 import xom.shop.persist.Product;
 
 @Service("product_Service")
 public class Product_Service {
 
 	@Autowired
-	Product_Repository product_Repo;
+	ProductRepo product_Repo;
 	
 	@SuppressWarnings("null")
 	public void save_product(Product product) {

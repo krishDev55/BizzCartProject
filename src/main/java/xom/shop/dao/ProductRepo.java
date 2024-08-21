@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import xom.shop.persist.Product;
 
 @Repository("product_Repo")
-public class Product_Repository {
+public class ProductRepo {
 
 	@Autowired
 	JdbcTemplate jdbc;
