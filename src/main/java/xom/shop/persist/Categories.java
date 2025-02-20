@@ -1,13 +1,26 @@
 package xom.shop.persist;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Categories {
 	@Id
 	int category_id;
 	String category_name;
+	@OneToMany
+	List<Product>products;
+
+	public List<Product> getProducts() {
+		return products;
+	}
+
+	public void setProducts(List<Product> products) {
+		this.products = products;
+	}
 
 	public int getCategory_id() {
 		return category_id;
@@ -31,7 +44,6 @@ public class Categories {
 	}
 
 	public Categories() {
-		System.out.println("This is categories controller");
 	}
 
 }

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import xom.shop.persist.Admin;
+import xom.shop.persist.Categories;
 import xom.shop.persist.Editor;
 
 @Repository()
@@ -17,8 +18,8 @@ public class AdminEditor_Repo {
 	HibernateTemplate hiber;
 
 	public Admin getAdmin(int id, String password) {
-	Admin admin=hiber.get(Admin.class, id);
-	return	admin;
+		Admin admin = hiber.get(Admin.class, id);
+		return admin;
 	}
 
 	@Transactional
@@ -36,19 +37,21 @@ public class AdminEditor_Repo {
 	@Transactional
 	public List<Editor> getListEditor() {
 		List<Editor> editor = hiber.loadAll(Editor.class);
-		System.out.println("List of Editors-->"+editor);
 		return editor;
 	}
 
+	@Transactional
+	public List<Categories> getListCategory() {
+		List<Categories> categoryList = hiber.loadAll(Categories.class);
+		return categoryList;
+	}
 
 	public AdminEditor_Repo() {
-		System.out.println("this is AdminEditor_Repo");
 	}
 
 	@Transactional
 	public List<Admin> getListAdmin() {
 		List<Admin> adminList = hiber.loadAll(Admin.class);
-		System.out.println("List of Editors-->"+adminList);
 		return adminList;
 	}
 }

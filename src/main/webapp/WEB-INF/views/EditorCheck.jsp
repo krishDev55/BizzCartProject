@@ -13,7 +13,7 @@
 	<h1 align="center">Welcome Editor</h1>
 	<h3 align="center">Enter You'r Values</h3>
 
-	<form:form action="http://localhost:8081/Shop/editor/login"
+	<form:form action="http://localhost:8081/Shop/admin/editor/login"
 		modelAttribute="editor" method="POST">
 
 		<a style="font-style: italic; font-size: xx-large;">Id :<input

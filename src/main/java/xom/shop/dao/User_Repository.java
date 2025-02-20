@@ -19,7 +19,6 @@ public class User_Repository {
 	JdbcTemplate jdbc;
 	@Autowired
 	HibernateTemplate hibernate;
-	private List<User> userlist;
 
 	@Transactional
 	public void saveUser(User user) {
@@ -37,10 +36,9 @@ public class User_Repository {
 		return userList;
 	}
 
-	
-	public User getUser(Integer id, String password) {
+	public User getUserById(Integer id) {
 		User user = hibernate.get(User.class, id);
-			id.equals(user.getUser_id());
+		id.equals(user.getUser_id());
 		setMonthes();
 		String date = user.getBirth_d().substring(3, 5);
 		Monthes month = map.get(Integer.parseInt(date));
@@ -51,7 +49,7 @@ public class User_Repository {
 	}
 
 	public static enum Monthes {
-		JAN, FEB, MARCH, APRIL, MAY, JUNE, JULY, AUG, SEP, AUCTO, NEV, DESC
+		JAN, FEB, MARCH, APRIL, MAY, JUNE, JULY, AUG, SEP, OCTO, NEV, DESC
 	}
 
 	static Map<Integer, Monthes> map;

@@ -1,0 +1,281 @@
+/* General Styles */
+body, html {
+    font-family: 'Roboto', sans-serif, Arial;
+    font-size: 14px;
+    color: #242424;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+    display: table;
+}
+
+.width-100, .width-50, .width-25, .width-33, .width-20 {
+    float: left;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-33 {
+    width: 33.33%;
+}
+
+.width-25 {
+    width: 25%;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Top Header */
+.top-header {
+    background-color: #f13f31;
+    padding: 8px 0;
+}
+
+.top-header p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.head1ul {
+    list-style: none;
+    float: right;
+}
+
+.head1ul li {
+    float: left;
+    margin-left: 10px;
+}
+
+.head1ul li a {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.head1ul li i {
+    margin-right: 5px;
+}
+
+/* Search Panel */
+.search-panel {
+    background-color: #89b1da;
+    padding: 12px 0;
+}
+
+.search-textbox {
+    padding-left: 16px;
+    height: 40px;
+    width: 80%;
+    border: 1px solid #fff;
+}
+
+.search-button {
+    height: 42px;
+    width: 55px;
+    border: none;
+    background: white;
+}
+
+.search-button i {
+    color: #f13f31;
+}
+
+/* Cart Section */
+.cart-sect {
+    list-style: none;
+    float: right;
+    margin-top: 8px;
+}
+
+.cart-sect li {
+    float: left;
+    padding: 0 6px;
+}
+
+.cart-sect li a {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Slider */
+.wimg100-slider {
+    width: 100%;
+    height: 280px;
+}
+
+#offerheader12 {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+/* Product Section */
+.product-section {
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.product-border {
+    border: 1px solid #d1d1d1;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-img {
+    width: 150px;
+    height: 200px;
+}
+
+.product-name a {
+    font-size: 17px;
+    color: #232b33;
+    font-weight: bold;
+}
+
+.product-rating i {
+    color: #FFC315;
+}
+
+.product-price {
+    margin-top: 15px;
+}
+
+.product-discounted-price {
+    color: #333;
+    font-weight: 600;
+}
+
+.product-original-price {
+    color: #6f6f6f;
+    text-decoration: line-through;
+}
+
+.product-discount {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 10px;
+}
+
+/* Feature Section */
+.feature-sect {
+    background-color: #f0f3fa;
+    padding: 50px 0;
+}
+
+.featured-content i {
+    color: #eb372a;
+    font-size: 37px;
+}
+
+.featured-content h4 {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.featured-content p {
+    font-size: 13px;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.quicklink-menu {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.quicklink-menu li a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 2.5;
+}
+
+.quicklink-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.get-in-touch {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.get-in-touch li i {
+    color: #ed372c;
+    font-size: 20px;
+}
+
+.get-in-touch li {
+    color: #fff;
+    line-height: 2.5;
+    font-size: 15px;
+}
+
+.footer-e-mail {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.social-media {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.social-media li {
+    float: left;
+    margin-right: 8px;
+}
+
+.social-media li a img {
+    width: 30px;
+}
+
+/* Footer-bottom Section */
+.footer2-bacbor {
+    background-color: #1d1d1d;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer2-content {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+
+
+If you’re looking for movies that explore romance and include more explicit content, here are some titles you might find interesting:
+
+Blue Is the Warmest Color (2013) - A coming-of-age romance that explores a deep relationship between two women.
+Nymphomaniac (2013) - A provocative film that delves into the life of a self-diagnosed nymphomaniac.
+Call Me by Your Name (2017) - A beautiful story of first love and desire set in Italy.
+The Handmaiden (2016) - A psychological thriller with a rich romance that unfolds in unexpected ways.
+Love (2015) - A film known for its explicit scenes, following a young man’s relationship filled with passion and intensity.
+9 Songs (2004) - A unique narrative that intertwines a couple's relationship with live music performances.

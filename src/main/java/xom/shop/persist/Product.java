@@ -2,6 +2,8 @@ package xom.shop.persist;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Product {
@@ -9,7 +11,21 @@ public class Product {
 	int product_id;
 	String product_name;
 	String description;
-	/* String image_url ; */
+	int product_prise;
+	String image_url;
+	int product_count;
+
+	public int getProduct_count() {
+		return product_count;
+	}
+
+	public void setProduct_count(int product_count) {
+		this.product_count = product_count;
+	}
+
+	@ManyToOne
+	@JoinColumn(name = "category_id")
+	Categories category;
 
 	public int getProduct_id() {
 		return product_id;
@@ -35,14 +51,38 @@ public class Product {
 		this.description = description;
 	}
 
-	public Product() {
-		System.out.println("This is Product controller");
+	public int getProduct_prise() {
+		return product_prise;
+	}
+
+	public void setProduct_prise(int product_prise) {
+		this.product_prise = product_prise;
+	}
+
+	public String getImage_url() {
+		return image_url;
+	}
+
+	public void setImage_url(String image_url) {
+		this.image_url = image_url;
+	}
+
+	public Categories getCategory() {
+		return category;
+	}
+
+	public void setCategory(Categories category) {
+		this.category = category;
 	}
 
 	@Override
 	public String toString() {
 		return "Product [product_id=" + product_id + ", product_name=" + product_name + ", description=" + description
-				+ "]";
+				+ ", product_prise=" + product_prise + ", image_url=" + image_url + ", product_count=" + product_count
+				+ ", category=" + category + "]";
+	}
+
+	public Product() {
 	}
 
 }

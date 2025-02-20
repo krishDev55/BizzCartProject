@@ -3,9 +3,9 @@
    "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
-<head>
+<head> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Home</title>
+<title>Update</title>
 </head>
 <body bgcolor="skyblue">
 	<h3 align="center" dir="ltr" style="azimuth: grad;">logiin sucsusess to
@@ -15,7 +15,7 @@
 	<br style="speak-numeral: digits;" title="Helllow">
 	<h2 align="center">
 		<a dir="ltr" name="Swapnil" onblur="shifttorigt" shape="poly"
-			style="elevation: rad;" href="logine"> Proceed for Login </a>
+			style="elevation: rad;" href="http://localhost:8081/Shop/logine"> Proceed for Login </a>
 	</h2>
 </body>
 </html>

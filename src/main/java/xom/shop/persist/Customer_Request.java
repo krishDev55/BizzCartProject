@@ -9,12 +9,7 @@ public class Customer_Request {
 	int request_id;
 	String description;
 	String status;
-	/*
-	 * 2 user_id INTEGER 10 REFERENCES users(user_id) 3 category_id INTEGER 10
-	 * REFERENCES categories(category_id) DEFAULT 'Pending' CHECK (status IN
-	 * ('Pending', 'Approved,Rejected
-	 */
-
+	
 	public int getRequest_id() {
 		return request_id;
 	}
@@ -46,7 +41,6 @@ public class Customer_Request {
 	}
 
 	public Customer_Request() {
-		System.out.println("This is Customer_Request constructor");
 	}
 
 }

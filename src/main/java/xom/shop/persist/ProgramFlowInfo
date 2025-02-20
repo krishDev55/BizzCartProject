@@ -1,0 +1,15 @@
+Here we are going to discuss about our program flow 
+
+
+first the home page(home.jsp):- It will contain welcome messages
+>best selling products with reting ---If user/admin clicks on product of home 
+ page then it will first check if the user/admin has logged in .if not then 
+ refer to login 
+>link to login page(login.jsp)--flow-->It will contain Id and Password with 
+  two sellecting options login as user/admin--->
+      if logins as user then it redirects to user to shop page which 
+       includes all offer's best deals and all
+      if logins as admin it will redirect admin to its admin page which include 
+       top sold products,quantity of product sold of perticular categories  
+       link to manege product,link to add new product ane etc as required 
+       

@@ -11,7 +11,7 @@ public class User {
 	String username;
 	String email;
 	String birth_d;
-	
+
 	public String getBirth_d() {
 		return birth_d;
 	}
@@ -70,7 +70,6 @@ public class User {
 	}
 
 	public User() {
-		System.out.println("This is User controller");
 	}
 
 }

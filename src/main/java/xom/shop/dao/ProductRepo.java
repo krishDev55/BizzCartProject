@@ -1,6 +1,7 @@
 package xom.shop.dao;
 
 import java.util.List;
+import org.hibernate.SessionFactory;
 
 import javax.transaction.Transactional;
 
@@ -13,18 +14,18 @@ import xom.shop.persist.Product;
 @Repository
 public class ProductRepo {
 
+
 	@Autowired
+	SessionFactory fac;
+	
 	HibernateTemplate hiber;
 
 	public List<Product> getPoductList() {
-		List<Product> prolist = hiber.loadAll(Product.class);
-		System.out.println(prolist);
-		return prolist;
+		return hiber.loadAll(Product.class);
 	}
 
 	public Product getPoduct(int id) {
 		Product pro = hiber.get(Product.class, id);
-		System.out.println(pro);
 		return pro;
 	}
 
@@ -42,12 +43,13 @@ public class ProductRepo {
 	public Integer savePoduct(Product product) {
 		return (Integer) hiber.save(product);
 	}
+
 	@Transactional
 	public Product saveAndGetProduct(Product product) {
-		return  hiber.merge(product);
+		return hiber.merge(product);
 	}
 
 	public ProductRepo() {
-		// TODO Auto-generated constructor stub
+		System.out.println("this is productt tepo");
 	}
 }

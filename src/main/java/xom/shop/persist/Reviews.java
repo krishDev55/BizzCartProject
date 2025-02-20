@@ -55,7 +55,6 @@ public class Reviews {
 	}
 
 	public Reviews() {
-		System.out.println("This is Reviews controller");
 	}
 
 }
